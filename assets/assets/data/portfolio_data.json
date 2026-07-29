@@ -1,0 +1,173 @@
+{
+  "hero": {
+    "name": "Dilip Jasrajani",
+    "title": "Lead Software Engineer",
+    "titles": [
+      "Lead Software Engineer",
+      "Flutter Architect",
+      "AI Engineer",
+      "Product Builder"
+    ],
+    "greetings": {
+      "morning": "Good morning! I'm",
+      "afternoon": "Hey there! I'm",
+      "evening": "Still coding - I'm",
+      "night": "Late night? Me too - I'm"
+    },
+    "codeSnippet": "class PortfolioBloc extends Bloc<PortfolioEvent, PortfolioState> {\n  PortfolioBloc({\n    required GetHero getHero,\n    required GetSkills getSkills,\n  }) : super(PortfolioInitial()) {\n    on<LoadPortfolio>((event, emit) async {\n      emit(PortfolioLoading());\n      try {\n        final hero = await getHero();\n        final skills = await getSkills();\n        emit(PortfolioLoaded(hero: hero, skills: skills));\n      } on Exception catch (e) {\n        emit(PortfolioError(e.toString()));\n      }\n    });\n  }\n}",
+    "globe": {
+      "lat": 17.38,
+      "lng": 78.48
+    },
+    "subtitle": "Flutter & Full-Stack Architect | AI Orchestration | Quality-First Engineering",
+    "summary": "Results-driven Lead Software Engineer with 6+ years of experience specializing in scalable Flutter application development and full-stack software architectures. Expert in Clean Architecture, BLoC state management, and designing reusable UI frameworks that maximize team velocity.",
+    "email": "dilipjas70@gmail.com",
+    "resumeUrl": "https://github.com/dilipJasrajani"
+  },
+  "services": [
+    {
+      "title": "Mobile Architecture",
+      "description": "Building scalable cross-platform Flutter applications using Clean Architecture and BLoC.",
+      "iconName": "mobile"
+    },
+    {
+      "title": "AI Orchestration",
+      "description": "Leveraging LLMs (Gemini, Claude, Copilot) to accelerate delivery cycles and automate testing.",
+      "iconName": "ai"
+    },
+    {
+      "title": "Quality-First Engineering",
+      "description": "Designing robust CI/CD pipelines and automated testing frameworks.",
+      "iconName": "quality"
+    },
+    {
+      "title": "Full-Stack Development",
+      "description": "Developing secure backend microservices with NodeJS and ExpressJS.",
+      "iconName": "fullstack"
+    }
+  ],
+  "skills": [
+    { "skillName": "Flutter", "proficiency": 0.95, "category": "Mobile Engineering" },
+    { "skillName": "Dart", "proficiency": 0.95, "category": "Mobile Engineering" },
+    { "skillName": "Android & iOS Cross-Platform", "proficiency": 0.90, "category": "Mobile Engineering" },
+    { "skillName": "Reusable UI Components", "proficiency": 0.90, "category": "Mobile Engineering" },
+    { "skillName": "Clean Architecture", "proficiency": 0.95, "category": "System Architecture" },
+    { "skillName": "BLoC State Management", "proficiency": 0.90, "category": "System Architecture" },
+    { "skillName": "Declarative UI Design", "proficiency": 0.90, "category": "System Architecture" },
+    { "skillName": "Modular Frameworks", "proficiency": 0.85, "category": "System Architecture" },
+    { "skillName": "NodeJS", "proficiency": 0.80, "category": "Backend & Cloud" },
+    { "skillName": "ExpressJS", "proficiency": 0.80, "category": "Backend & Cloud" },
+    { "skillName": "MySQL", "proficiency": 0.80, "category": "Backend & Cloud" },
+    { "skillName": "REST API Design", "proficiency": 0.85, "category": "Backend & Cloud" },
+    { "skillName": "AWS EC2", "proficiency": 0.75, "category": "Backend & Cloud" },
+    { "skillName": "GitHub Copilot", "proficiency": 0.95, "category": "AI & Engineering Productivity" },
+    { "skillName": "ChatGPT", "proficiency": 0.95, "category": "AI & Engineering Productivity" },
+    { "skillName": "Claude", "proficiency": 0.90, "category": "AI & Engineering Productivity" },
+    { "skillName": "Gemini", "proficiency": 0.90, "category": "AI & Engineering Productivity" },
+    { "skillName": "LLM Prompt Engineering", "proficiency": 0.90, "category": "AI & Engineering Productivity" },
+    { "skillName": "RAG", "proficiency": 0.85, "category": "AI Orchestration" },
+    { "skillName": "LLM Model Routing", "proficiency": 0.80, "category": "AI Orchestration" },
+    { "skillName": "LiteLLM", "proficiency": 0.80, "category": "AI Tooling" },
+    { "skillName": "ChromaDB", "proficiency": 0.75, "category": "AI Tooling" },
+    { "skillName": "Ollama", "proficiency": 0.80, "category": "AI Tooling" },
+    { "skillName": "ReAct Loop", "proficiency": 0.85, "category": "Architecture Patterns" },
+    { "skillName": "Tool Calling", "proficiency": 0.85, "category": "Architecture Patterns" },
+    { "skillName": "Semantic Search", "proficiency": 0.80, "category": "Architecture Patterns" },
+    { "skillName": "Unit & Integration Testing", "proficiency": 0.90, "category": "Engineering Quality" },
+    { "skillName": "Postman", "proficiency": 0.85, "category": "Engineering Quality" },
+    { "skillName": "GIT", "proficiency": 0.90, "category": "Engineering Quality" },
+    { "skillName": "Java", "proficiency": 0.75, "category": "Secondary Languages & QA" },
+    { "skillName": "JavaScript", "proficiency": 0.80, "category": "Secondary Languages & QA" },
+    { "skillName": "C / C++", "proficiency": 0.70, "category": "Secondary Languages & QA" },
+    { "skillName": "Selenium", "proficiency": 0.80, "category": "Secondary Languages & QA" },
+    { "skillName": "Appium", "proficiency": 0.75, "category": "Secondary Languages & QA" },
+    { "skillName": "Cucumber-BDD", "proficiency": 0.80, "category": "Secondary Languages & QA" }
+  ],
+  "experience": [
+    {
+      "company": "Carrier",
+      "role": "Lead Engineer - Flutter Developer",
+      "duration": "04/2026 – Present",
+      "bullets": [
+        "Lead end-to-end development of scalable enterprise apps in HVAC domain",
+        "Architect Clean Architecture and BLoC across multiple product modules",
+        "Engineered reusable widget framework reducing UI dev cycles by 30%",
+        "Mentor junior engineers using AI tools to accelerate delivery"
+      ]
+    },
+    {
+      "company": "Carrier",
+      "role": "Senior Engineer - Flutter Developer",
+      "duration": "01/2025 – 03/2026",
+      "bullets": [
+        "Developed high-performance cross-platform apps for HVAC portfolio",
+        "Built modular scalable UI component libraries adopted across teams",
+        "Reduced technical debt via Clean Architecture migration initiatives",
+        "Designed seamless API integration patterns for real-time data sync"
+      ]
+    },
+    {
+      "company": "Thoughtworks",
+      "role": "Mobile Developer - Senior Consultant",
+      "duration": "12/2021 – 01/2025",
+      "bullets": [
+        "Engineered enterprise Flutter apps in the trading and capital markets domain",
+        "Implemented decoupled BLoC state management for complex trade flows",
+        "Owned high-impact user-facing features end-to-end from discovery to delivery",
+        "Earned stakeholder recognitions for technical excellence and delivery speed"
+      ]
+    },
+    {
+      "company": "OneTrust",
+      "role": "SDET",
+      "duration": "07/2021 – 12/2021",
+      "bullets": [
+        "Engineered automated regression testing suite with Java and Selenium",
+        "Executed Postman API workflows to validate REST endpoints"
+      ]
+    },
+    {
+      "company": "Oracle",
+      "role": "Jr. Quality Assurance Analyst",
+      "duration": "07/2019 – 07/2021",
+      "bullets": [
+        "Developed automation code for Oracle Fusion HCM regression suites",
+        "Reduced regression test failures through targeted root-cause analysis",
+        "Received formal recognition for critical bug fixes in production"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "WhereAbout",
+      "role": "Co-Creator",
+      "description": "A sleek utility app to save frequently visited locations and instantly open them in Google Maps 'Go Mode' for seamless, one-tap navigation.",
+      "techStack": ["Flutter", "Google Maps API"],
+      "iconPath": "assets/images/where-abouts-playstore.png",
+      "hasAppStore": false,
+      "hasPlayStore": true
+    },
+    {
+      "title": "MySociety Hood",
+      "role": "Full-Stack Developer",
+      "description": "A complete cross-platform mobile ecosystem engineered for housing society financial management and real-time data handling.",
+      "techStack": ["Flutter", "NodeJS", "ExpressJS", "MySQL"],
+      "iconPath": "assets/images/mysociety-hood-playstore.png",
+      "hasAppStore": true,
+      "hasPlayStore": true
+    },
+    {
+      "title": "Student Dropout Analysis",
+      "role": "Frontend Developer",
+      "description": "An interactive web platform built for the Gujarat Hackathon 2018 providing granular demographic data filtering and visualization.",
+      "techStack": ["Web", "Frontend Data Viz"],
+      "iconPath": ""
+    }
+  ],
+  "contact": {
+    "location": "Hyderabad - India",
+    "email": "dilipjas70@gmail.com",
+    "github": "https://github.com/dilipJasrajani",
+    "linkedin": "https://www.linkedin.com/in/dilip-jasrajani-a521071a3/"
+  }
+}
